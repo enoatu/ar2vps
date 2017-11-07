@@ -1,0 +1,98 @@
+@charset "UTF-8";
+h1{
+    text-align: center;
+font-style: oblique;
+    color:#bb2222;
+}
+h3{
+       font-size: 1.2em;/* 文字の大きさ */
+       font-weight: bold;/* 文字の太さ */
+       color: #FF3F7F;/* 文字の色 */
+       border: 2px dashed #ffecef;/* ステッチの太さ・種類・カラー */
+       background: #f9cfd7;/* 背景色 */
+       border-radius: 8px;/* 四隅の丸み */
+       box-shadow: 0 0 3px 3px #F9B8CD;
+       margin: 0 0 1.5em;
+       padding: 0.5em 0.8em;
+
+    text-align: center;
+}
+h4{
+    text-align: center;
+  color: #bb37a3;
+}
+
+.button{
+    width:30%;
+}
+
+.square{}
+.ra{
+
+
+}
+.button {
+    display: inline-block;
+    padding: .65em 4em;
+    background: -webkit-linear-gradient(#fe5f95 , #ff3f7f);
+    background: linear-gradient(#fe5f95 , #ff3f7f);
+    border: 1px solid #fe3276;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.button:hover {
+    -webkit-animation: bounce 2s ease-in-out;
+    animation: bounce 2s ease-in-out;
+}
+.button2 {
+    display: inline-block;
+    padding: .65em 4em;
+    background: -webkit-linear-gradient(#fe8a21, #ff863a);
+    background: linear-gradient(#feb85b, #ffbf47);
+    border: 1px solid #feab11;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.button2:hover {
+    -webkit-animation: bounce 2s ease-in-out;
+    animation: bounce 2s ease-in-out;
+}
+@-webkit-keyframes bounce {
+    5%  { -webkit-transform: scale(1.1, .8); }
+    10% { -webkit-transform: scale(.8, 1.1) translateY(-5px); }
+    15% { -webkit-transform: scale(1, 1); }
+}
+@keyframes bounce {
+    5%  { transform: scale(1.1, .8); }
+    10% { transform: scale(.8, 1.1) translateY(-5px); }
+    15% { transform: scale(1, 1); }
+}
+h2 {
+    color: #fff;
+    padding: 20px;
+    font-size: 22px;
+    background: #FEA993;
+    border: 2px dashed #F7F9CC;
+    border-radius: 10px;
+    box-shadow: 0 0 0 7px #FEA993;
+}
+body {
+    padding: 5px 20px;
+    font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+    background-color: #ffffff;
+}
+
+td{
+}
+
+table{
+    text-align: center;
+}
