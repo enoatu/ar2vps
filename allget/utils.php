@@ -44,20 +44,7 @@ $filtering_words0 = [
 $name_filtering_words=["bot","アフィリエイト","自動","公式","app","フリマアプリ",
     "高収入","紹介","アプリ","App"];
 
-function getDB()
-{
-    $host = "localhost";
-    $user = "user2";
-    $password = "pass";
-    $dbName = "user2db";
-    // $host = 'mysql1.php.xdomain.ne.jp';
-    $dsn = "mysql:host={$host};dbname={$dbName};charset=utf8";//mysqlのDSN文字列
-    $pdo = new PDO($dsn, $user, $password);
-    $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-    //例外がスローされる設定にする
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    return $pdo;
-}
+include "../../atsushi/gtd.php";
 
     //プリペアドステートメントのエミュレーションを無効化
 
