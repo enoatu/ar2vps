@@ -2,9 +2,9 @@
 
 
 //require("do2form.php");
-require "../vendor/autoload.php";
-require_once "../lib_es/lib/util.php";
-require_once "utils.php";
+require __DIR__."/../vendor/autoload.php";
+require_once __DIR__."/../lib_es/lib/util.php";
+require_once __DIR__."/utils.php";
 //require "TwistOAuth.phar/TwistOAuth.php"
 ?>
     <link rel="stylesheet" href="style/cssinputform.css" type="text/css">

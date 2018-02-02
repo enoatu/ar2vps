@@ -9,6 +9,24 @@ require_once "../utils.php";
 
 $ddd=date("Y/m/d H:i",strtotime("-2 day"));
 var_dump($ddd);
+
+$sql = " show tables like 'servicetable' ";
+    $stm = getDB()->prepare ($sql);
+    $tbl = $stm->execute ();
+        echo "tbl".$tbl;
+    if ($tbl ==1 ){
+       try {
+           $sql = "DROP TABLE servicetable";
+           $stm = getDB()->prepare($sql);
+           $stm->execute();
+           echo "did";
+       }catch (Exception $e){
+           echo "error";
+       }
+        # テーブルが存在する場合の処理
+    }else{
+        echo "error2";
+    }
 try{
     $sql="CREATE TABLE servicetable AS
 (SELECT T1.id FROM service_tb2 T1 WHERE DATE_FORMAT(T1.time,'%Y/%m/%d %H:%i') >= :ddd AND EXISTS

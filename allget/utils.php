@@ -44,7 +44,7 @@ $filtering_words0 = [
 $name_filtering_words=["bot","アフィリエイト","自動","公式","app","フリマアプリ",
     "高収入","紹介","アプリ","App"];
 
-include "../../atsushi/gtd.php";
+include __DIR__."/../../atsushi/gtd.php";
 
     //プリペアドステートメントのエミュレーションを無効化
 
